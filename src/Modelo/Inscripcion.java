@@ -36,9 +36,17 @@ public class Inscripcion {
         this.excursion = excursion;
     }
 
-    public boolean cancelarInscripcion() {
+    /*public boolean cancelarInscripcion() {
         // Implementar lógica para cancelar la inscripción
         return false;
+    }
+    */
+   
+       // Comprobar si la fecha de la excursión no ha pasado
+    if (excursion.getFecha().after(new Date())) {
+        return true;
+    }
+    return false;
     }
 
     @Override
@@ -49,4 +57,4 @@ public class Inscripcion {
                 ", excursion=" + excursion +
                 '}';
     }
-}
+

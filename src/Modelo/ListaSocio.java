@@ -9,7 +9,7 @@ public class ListaSocio {
         this.listaSocio = new ArrayList<>();
     }
 
-    public void anyadirSocio(Socio socio) {
+    public void añadirSocio(Socio socio) {
         listaSocio.add(socio);
     }
 
